@@ -6,6 +6,10 @@ module.exports = {
       fontFamily:{
         Nunito:['Nunito'],
       },
+      colors:{
+        'mainColor':"#e8786e",
+        'mainColorL':"#fceae9",
+      },
     },
   },
   plugins: [],
