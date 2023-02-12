@@ -4,5 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.button{
+    @apply hover:animate-toRight rounded text-white bg-mainColor p-2 w-44 hover:bg-gray-700 cursor-pointer;
+}
 
