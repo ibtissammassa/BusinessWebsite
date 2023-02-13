@@ -603,10 +603,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.ml-0{
-  margin-left: 0px;
-}
-
 .flex{
   display: flex;
 }
@@ -671,6 +667,10 @@ video {
   justify-content: space-between;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -701,6 +701,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-\[9\%\]{
+  padding: 9%;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -718,10 +722,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pl-0{
-  padding-left: 0px;
 }
 
 .text-center{
@@ -928,6 +928,10 @@ video {
     border-style: none;
   }
 
+  .md\:pl-0{
+    padding-left: 0px;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -954,21 +958,43 @@ video {
   }
 }
 
+@media (min-width: 856px){
+  .mdd\:ml-4{
+    margin-left: 1rem;
+  }
+
+  .mdd\:h-98{
+    height: 35rem;
+  }
+
+  .mdd\:w-3\/5{
+    width: 60%;
+  }
+
+  .mdd\:flex-row{
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 991px){
   .mdl\:ml-8{
     margin-left: 2rem;
-  }
-
-  .mdl\:h-100{
-    height: 38rem;
   }
 
   .mdl\:h-17{
     height: 4.5rem;
   }
 
-  .mdl\:w-2\/5{
-    width: 40%;
+  .mdl\:h-300{
+    height: 60rem;
+  }
+
+  .mdl\:flex-col{
+    flex-direction: column;
+  }
+
+  .mdl\:p-8{
+    padding: 2rem;
   }
 
   .mdl\:px-32{
@@ -981,9 +1007,18 @@ video {
     padding-bottom: 2rem;
   }
 
+  .mdl\:pl-8{
+    padding-left: 2rem;
+  }
+
   .mdl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .mdl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .mdl\:text-base{
@@ -992,26 +1027,31 @@ video {
   }
 }
 
-@media (min-width: 1024px){
-  .lg\:w-2\/4{
+@media (min-width: 1133px){
+  .l\:h-100{
+    height: 38rem;
+  }
+
+  .l\:w-2\/4{
     width: 50%;
   }
 
-  .lg\:flex-row{
+  .l\:w-2\/5{
+    width: 40%;
+  }
+
+  .l\:flex-row{
     flex-direction: row;
   }
 
-  .lg\:pl-32{
+  .l\:pl-32{
     padding-left: 8rem;
   }
 
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:leading-8{
+  .l\:leading-8{
     line-height: 2rem;
   }
 }
+
+
 
