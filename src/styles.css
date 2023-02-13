@@ -4,7 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.button{
-    @apply hover:animate-toRight rounded text-white bg-mainColor p-2 w-44 hover:bg-gray-700 cursor-pointer;
+.btn{
+    @apply rounded bg-mainColor text-white cursor-pointer p-2 relative inline-block overflow-hidden z-0 transition-all w-32 text-center shadow-md;
+}
+
+.btn::before{
+    @apply content-[""] absolute top-0 right-0 h-full w-0 bg-gray-700 -z-10 duration-200 transition-all ease-out;
+}
+
+.btn:hover::before{
+    @apply left-0 w-full;
+}
+
+@keyframes cloud{
+    0%{
+        background-position-x: 0rem;
+    }
+    100%{
+        background-position-x: -250rem;
+    }
+}
+
+.cloud-animation {
+  animation: cloud 15s linear infinite;
+}
+
+.animation-reverse{
+    animation-direction:reverse;
+    animation-duration:20s;
 }
 

@@ -12,7 +12,7 @@
 
     <!-----------START HEADER---------------------->
 
-    <header class="relative flex justify-between mdl:h-17 items-center mdl:px-32 mdl:py-8 sticky top-0 border bg-white shadow-md px-4 h-16">
+    <header class="z-40 relative flex justify-between mdl:h-17 items-center mdl:px-32 mdl:py-8 sticky top-0 border bg-white shadow-md px-4 h-16">
         <h1 class="font-bold mdl:text-2xl cursor-pointer text-2xl md:text-xl">Marketo.</h1>
         <nav id="nav" class="hidden md:block h-90 md:h-fit md:w-auto w-64 absolute top-20 right-4 border rounded shadow-md bg-white md:border-none md:shadow-none md:static">
             <ul class="my-2 md:my-auto flex flex-col md:flex-row text-gray-600 mdl:text-base md:text-sm">
@@ -36,65 +36,71 @@
 
     <!-----------START MAIN SECTION---------------------->
 
-    <div class="bg-mainColorL">
-        <div class="flex h-100 items-center ">
-            <div class="w-2/4 pl-32">
-                <h1 class="font-bold text-5xl mb-4">Grow Your Business With Us</h1>
-                <p class="text-gray-500 text-base leading-8 mb-5">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Facere Atque Sapiente Veritatis Nesciunt Adipisci Culpa.</p>
-                <span class="button">Try For Free</span>
+    <div class="bg-mainColorL h-200 md:h-300 mdl:h-100 relative z-0">
+        <div class="flex items-center flex-col lg:flex-row text-center md:text-left">
+            <div class="px-4 lg:pt-auto pt-8 lg:w-2/4 lg:pl-32">
+                <h1 class="font-bold text-3xl lg:text-4xl mb-4">Grow Your Business With Us</h1>
+                <p class="text-gray-500 text-sm mdl:text-base leading-7 lg:leading-8 mb-5">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Facere Atque Sapiente Veritatis Nesciunt Adipisci Culpa.</p>
+                <span class="btn">Try For Free</span>
             </div>
-            <div class="w-2/5">
-                <img class="" src="img/rocket.svg" alt="">
+            <div class="w-screen mdl:w-2/5">
+                <img class="w-full" src="img/rocket.svg" alt="">
             </div>
         </div>
-        <div>
-            <!--Clouds img-->
-        </div>
+
+        <div class="cloud-animation animation-reverse z-10 bg-cloud absolute -bottom-1 opacity-50 right-0 left-0 h-60 w-full"><!--cloud1--></div>
+        <div class="cloud-animation z-20 bg-cloud absolute -bottom-10 right-0 left-0 h-60 w-full"><!--cloud2--></div>
+        
     </div>
 
     <!-----------END MAIN SECTION---------------------->
 
-    <div>
-    <h1>Our Services</h1>
-    <div>
+    <!-----------START OUR SERVICES SECTION---------------------->
+
+    <div class="z-30">
+        <h1>Our Services</h1>
         <div>
-            <img src="img/s-1.png" alt="">
-            <h1>Web Design</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
+            <div>
+                <img src="img/s-1.png" alt="">
+                <h1>Web Design</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
+            <div>
+                <img src="img/s-2.png" alt="">
+                <h1>Seo Marketing</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
+            <div>
+                <img src="img/s-3.png" alt="">
+                <h1>Web Hosting</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
+            <div>
+                <img src="img/s-4.png" alt="">
+                <h1>Digital Marketing</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
+            <div>
+                <img src="img/s-5.png" alt="">
+                <h1>Ad Campaign</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
+            <div>
+                <img src="img/s-6.png" alt="">
+                <h1>Content Marketing</h1>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
+                <span>Learn More</span>
+            </div>
         </div>
-        <div>
-            <img src="img/s-2.png" alt="">
-            <h1>Seo Marketing</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
         </div>
-        <div>
-            <img src="img/s-3.png" alt="">
-            <h1>Web Hosting</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
-        </div>
-        <div>
-            <img src="img/s-4.png" alt="">
-            <h1>Digital Marketing</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
-        </div>
-        <div>
-            <img src="img/s-5.png" alt="">
-            <h1>Ad Campaign</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
-        </div>
-        <div>
-            <img src="img/s-6.png" alt="">
-            <h1>Content Marketing</h1>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?</p>
-            <span>Learn More</span>
-        </div>
-    </div>
-    </div>
+
+    <!-----------END OUR SERVICES SECTION---------------------->
+
 
     <div>
         <h1>About Us</h1>
