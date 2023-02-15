@@ -20,13 +20,16 @@ module.exports = {
         '300':'60rem',
       },
       screens: {
-      'mdl': '991px',// => @media (min-width: 991px) { ... }
       'mdd':'856px',// => @media (min-width: 856px) { ... }
+      'mdl': '991px',// => @media (min-width: 991px) { ... }
       'l':'1133px',// => @media (min-width: 1133px) { ... }
 
       },
       backgroundImage: {
         'cloud': "url('img/cloud.png')",
+      },
+      fontSize: {
+        '45xl':'2.5rem',
       }
     }
   },
