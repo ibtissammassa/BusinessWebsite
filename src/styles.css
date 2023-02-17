@@ -34,5 +34,22 @@
     animation-duration:20s;
 }
 
+.card{
+    @apply flex flex-col items-center border border-gray-200 rounded shadow-xl px-10 py-12;
+}
 
+.card h1{
+    @apply text-xl font-bold mdl:text-2xl py-3;
+}
 
+.card p{
+    @apply text-gray-500 text-sm leading-7 mb-3;
+}
+
+.title{
+    @apply text-4xl mdl:text-45xl font-bold mb-7;
+}
+
+.title span {
+    @apply text-mainColor rounded bg-mainColorL px-2 py-0.5;
+}
