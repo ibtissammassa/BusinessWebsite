@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 /*
-! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -575,6 +575,10 @@ video {
   z-index: 50;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -595,6 +599,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -607,6 +616,26 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -617,6 +646,10 @@ video {
 
 .hidden{
   display: none;
+}
+
+.h-1\/4{
+  height: 25%;
 }
 
 .h-16{
@@ -637,6 +670,14 @@ video {
 
 .h-90{
   height: 22rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .w-24{
@@ -667,6 +708,14 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -677,6 +726,14 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -713,13 +770,27 @@ video {
   stroke-width: 2;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-1{
   padding: 0.25rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-4{
@@ -803,9 +874,9 @@ video {
 }
 
 .transition{
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -813,6 +884,8 @@ video {
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
+
+/*BOTTON*/
 
 .btn{
   position: relative;
@@ -824,8 +897,10 @@ video {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(232 120 110 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding: 0.375rem;
   text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -834,6 +909,14 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 991px){
+  .btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .btn::before{
@@ -858,6 +941,8 @@ video {
   width: 100%;
 }
 
+/*CLOUD ANIMATION*/
+
 @keyframes cloud{
   0%{
     background-position-x: 0rem;
@@ -876,6 +961,8 @@ video {
   animation-direction:reverse;
   animation-duration:20s;
 }
+
+/*OUR SERVICES CARDS*/
 
 .card{
   display: flex;
@@ -917,6 +1004,8 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+/*TITLE H1*/
+
 .title{
   margin-bottom: 1.75rem;
   font-size: 2.25rem;
@@ -940,6 +1029,249 @@ video {
   padding-bottom: 0.125rem;
   --tw-text-opacity: 1;
   color: rgb(232 120 110 / var(--tw-text-opacity));
+}
+
+/*MINI CARD ABOUT US*/
+
+.miniCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.miniCard svg{
+  width: 2.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 234 233 / var(--tw-bg-opacity));
+  padding: 0.625rem;
+}
+
+@media (min-width: 768px){
+  .miniCard svg{
+    width: 3rem;
+  }
+}
+
+@media (min-width: 856px){
+  .miniCard svg{
+    padding: 0.75rem;
+  }
+}
+
+.miniCard h3{
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+@media (min-width: 991px){
+  .miniCard h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.Pbox{
+  position: relative;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.Pbox span{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+/**Important styles(Portfolio TRANSITIONS)**/
+
+.Pbox::before{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+  -webkit-clip-path: circle(30% at 93% 0);
+          clip-path: circle(30% at 93% 0);
+  transition: .3s linear;
+}
+
+.Pbox:hover::before{
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.Pbox div{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .3s linear;
+}
+
+.Pbox:hover div{
+  top: 0px;
+  opacity: 1;
+}
+
+/**Fin important styles(TRANSITIONS)**/
+
+.Pbox div h3{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.Pbox div p{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+/*OUR PRICINGS*/
+
+.PricingCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.PricingCard h2{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.PricingCard img{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 10rem;
+}
+
+.PricingCard h1{
+  --tw-text-opacity: 1;
+  color: rgb(232 120 110 / var(--tw-text-opacity));
+}
+
+.PricingCard h1 span{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.PricingCard ul{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.PricingCard ul li{
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/*CLIENT'S REVIEW*/
+
+.ClientCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.25rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  padding: 2rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.ClientCard div{
+  display: flex;
+  flex-direction: row;
+}
+
+.ClientCard div div h2{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.ClientCard p{
+  padding: 0.75rem;
+  text-align: left;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.johndoe{
+  display: flex;
+  flex-direction: column;
+}
+
+.stars{
+  display: flex;
+  flex-direction: row;
+}
+
+.stars svg{
+  height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(232 120 110 / var(--tw-text-opacity));
+}
+
+.ClientCard div img{
+  height: 5rem;
+  border-radius: 9999px;
+}
+
+.quote{
+  height: 4rem;
 }
 
 .hover\:bg-mainColor:hover{
@@ -1003,6 +1335,10 @@ video {
     width: auto;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1050,42 +1386,105 @@ video {
 }
 
 @media (min-width: 856px){
+  .mdd\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .mdd\:ml-4{
     margin-left: 1rem;
+  }
+
+  .mdd\:mt-0{
+    margin-top: 0px;
+  }
+
+  .mdd\:h-96{
+    height: 24rem;
   }
 
   .mdd\:h-98{
     height: 35rem;
   }
 
+  .mdd\:w-2\/4{
+    width: 50%;
+  }
+
   .mdd\:w-3\/5{
     width: 60%;
+  }
+
+  .mdd\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mdd\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .mdd\:flex-row{
     flex-direction: row;
   }
+
+  .mdd\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .mdd\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (min-width: 991px){
+  .mdl\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .mdl\:my-5{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .mdl\:ml-2{
     margin-left: 0.5rem;
+  }
+
+  .mdl\:mt-9{
+    margin-top: 2.25rem;
   }
 
   .mdl\:h-17{
     height: 4.5rem;
   }
 
+  .mdl\:h-2\/3{
+    height: 66.666667%;
+  }
+
   .mdl\:h-300{
     height: 60rem;
+  }
+
+  .mdl\:w-11\/12{
+    width: 91.666667%;
   }
 
   .mdl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .mdl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .mdl\:flex-col{
     flex-direction: column;
+  }
+
+  .mdl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .mdl\:px-24{
@@ -1108,6 +1507,11 @@ video {
     line-height: 2rem;
   }
 
+  .mdl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .mdl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1120,18 +1524,34 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 }
 
 @media (min-width: 1133px){
+  .l\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .l\:ml-5{
     margin-left: 1.25rem;
   }
 
   .l\:h-100{
     height: 38rem;
+  }
+
+  .l\:h-96{
+    height: 24rem;
   }
 
   .l\:w-2\/4{
@@ -1142,8 +1562,17 @@ video {
     width: 40%;
   }
 
+  .l\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .l\:flex-row{
     flex-direction: row;
+  }
+
+  .l\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .l\:pl-20{
