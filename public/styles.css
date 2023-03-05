@@ -624,6 +624,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -650,6 +654,10 @@ video {
 
 .h-1\/4{
   height: 25%;
+}
+
+.h-100{
+  height: 38rem;
 }
 
 .h-16{
@@ -680,18 +688,6 @@ video {
   height: 100%;
 }
 
-.h-96{
-  height: 24rem;
-}
-
-.h-100{
-  height: 38rem;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
 .w-11\/12{
   width: 91.666667%;
 }
@@ -718,26 +714,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-16{
-  width: 4rem;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-2\/4{
-  width: 50%;
-}
-
-.w-3\/4{
-  width: 75%;
 }
 
 .cursor-pointer{
@@ -843,11 +819,6 @@ video {
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-24{
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 .px-4{
@@ -1430,6 +1401,35 @@ input{
   height: 2.75rem;
 }
 
+/*FOOTER*/
+
+footer i{
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(232 120 110 / var(--tw-text-opacity));
+  transition: .2s linear;
+}
+
+footer a:hover i{
+  padding-right: 1.25rem;
+}
+
+footer h2{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+footer li{
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .hover\:bg-mainColor:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(232 120 110 / var(--tw-bg-opacity));
@@ -1470,10 +1470,6 @@ input{
     margin-left: 1.25rem;
   }
 
-  .md\:mt-14{
-    margin-top: 3.5rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1489,6 +1485,10 @@ input{
   .md\:h-fit{
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:h-100{
+    height: 38rem;
   }
 
   .md\:w-auto{
@@ -1582,6 +1582,10 @@ input{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .mdd\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .mdd\:flex-row{
     flex-direction: row;
   }
@@ -1626,8 +1630,16 @@ input{
     height: 60rem;
   }
 
+  .mdl\:h-100{
+    height: 38rem;
+  }
+
   .mdl\:w-11\/12{
     width: 91.666667%;
+  }
+
+  .mdl\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .mdl\:grid-cols-2{
@@ -1636,10 +1648,6 @@ input{
 
   .mdl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .mdl\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .mdl\:flex-col{
