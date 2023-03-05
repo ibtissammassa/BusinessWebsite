@@ -184,9 +184,13 @@
 /*CONTACT US*/
 
 .ContactCard{
-    @apply rounded border-gray-300 shadow-md border-2
+    @apply rounded border-gray-300 shadow-md border-2 ;
 }
 
 .ContactCard i{
     @apply text-mainColor 
+}
+
+input,textarea{
+    @apply text-gray-500 bg-gray-300 border-gray-400 rounded 
 }
