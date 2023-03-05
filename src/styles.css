@@ -120,7 +120,7 @@
 /*OUR PRICINGS*/
 
 .PricingCard{
-    @apply flex flex-col rounded shadow-lg border-3 border-gray-300 items-center py-8;
+    @apply flex flex-col rounded shadow-lg border border-gray-200 items-center py-8 
 }
 
 .PricingCard h2{
@@ -150,7 +150,7 @@
 /*CLIENT'S REVIEW*/
 
 .ClientCard{
-    @apply rounded border-gray-200 shadow-md p-5 border-1;
+    @apply rounded border border-gray-200 shadow-md p-6 py-8;
 }
 
 .ClientCard div{
@@ -158,7 +158,7 @@
 }
 
 .ClientCard div div h2{
-    @apply font-bold text-2xl mb-1 
+    @apply font-bold l:text-xl mb-1 text-base 
 }
 
 .johndeo{
@@ -174,23 +174,31 @@
 }
 
 .ClientCard div img{
-    @apply rounded-full h-20
+    @apply rounded-full l:h-20 h-16
 }
 
 .quote{
-    @apply h-20 ml-auto
+    @apply l:h-20 ml-auto h-16
 }
 
 /*CONTACT US*/
 
 .ContactCard{
-    @apply rounded border-gray-300 shadow-md border-2 ;
+    @apply rounded shadow-md border border-gray-200 py-8 
 }
 
 .ContactCard i{
-    @apply text-mainColor 
+    @apply w-14 h-14 text-center text-xl mdl:text-2xl p-3 rounded-full bg-mainColorL text-mainColor;
+}
+
+.ContactCard p{
+    @apply text-gray-500 text-sm pb-2
 }
 
 input,textarea{
-    @apply text-gray-500 bg-gray-300 border-gray-400 rounded 
+    @apply bg-gray-50 border mb-4 border-gray-300 rounded focus:bg-mainColorL focus:border-gray-300 p-2
+}
+
+input{
+    @apply h-11
 }
