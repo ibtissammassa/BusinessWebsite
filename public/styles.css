@@ -712,6 +712,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -750,6 +754,11 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-mainColorL{
@@ -828,6 +837,11 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm{
@@ -1218,10 +1232,8 @@ video {
 /*CLIENT'S REVIEW*/
 
 .ClientCard{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border-radius: 0.25rem;
+  border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
   padding: 2rem;
@@ -1232,35 +1244,32 @@ video {
 
 .ClientCard div{
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .ClientCard div div h2{
-  font-size: 1rem;
-  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
+}
+
+.johndeo{
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .ClientCard p{
   padding: 0.75rem;
   text-align: left;
+  font-style: italic;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.johndoe{
-  display: flex;
-  flex-direction: column;
-}
-
-.stars{
-  display: flex;
-  flex-direction: row;
-}
-
-.stars svg{
-  height: 1.25rem;
+.stars i{
   --tw-text-opacity: 1;
   color: rgb(232 120 110 / var(--tw-text-opacity));
 }
@@ -1271,7 +1280,8 @@ video {
 }
 
 .quote{
-  height: 4rem;
+  margin-left: auto;
+  height: 5rem;
 }
 
 .hover\:bg-mainColor:hover{

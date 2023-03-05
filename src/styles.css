@@ -120,7 +120,7 @@
 /*OUR PRICINGS*/
 
 .PricingCard{
-    @apply flex flex-col rounded shadow-lg border-gray-300 items-center py-8;
+    @apply flex flex-col rounded shadow-lg border-3 border-gray-300 items-center py-8;
 }
 
 .PricingCard h2{
@@ -150,27 +150,23 @@
 /*CLIENT'S REVIEW*/
 
 .ClientCard{
-    @apply rounded border-gray-500 shadow-md flex justify-center flex-col p-8;
+    @apply rounded border-gray-200 shadow-md p-5 border-1;
 }
 
 .ClientCard div{
-    @apply flex flex-row items-center
+    @apply flex items-center pb-3
 }
 
 .ClientCard div div h2{
-    @apply font-bold text-lg
+    @apply font-bold text-2xl mb-1 
+}
+
+.johndeo{
+    @apply flex flex-col ml-3
 }
 
 .ClientCard p{
-    @apply text-gray-500 leading-7 text-left p-3
-}
-
-.johndoe{
-    @apply flex flex-col
-}
-
-.stars{
-    @apply 
+    @apply text-gray-400 leading-6 text-left italic text-sm
 }
 
 .stars i{
@@ -182,5 +178,15 @@
 }
 
 .quote{
-    @apply h-16
+    @apply h-20 ml-auto
+}
+
+/*CONTACT US*/
+
+.ContactCard{
+    @apply rounded border-gray-300 shadow-md border-2
+}
+
+.ContactCard i{
+    @apply text-mainColor 
 }
