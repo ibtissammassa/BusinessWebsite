@@ -656,10 +656,6 @@ video {
   height: 25%;
 }
 
-.h-100{
-  height: 38rem;
-}
-
 .h-16{
   height: 4rem;
 }
@@ -926,6 +922,11 @@ video {
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+body{
+  scroll-behavior: smooth;
+  transition: .3s linear;
 }
 
 /*BOTTON*/
@@ -1487,10 +1488,6 @@ footer li{
     height: fit-content;
   }
 
-  .md\:h-100{
-    height: 38rem;
-  }
-
   .md\:w-auto{
     width: auto;
   }
@@ -1618,6 +1615,10 @@ footer li{
     margin-top: 2.25rem;
   }
 
+  .mdl\:h-100{
+    height: 38rem;
+  }
+
   .mdl\:h-17{
     height: 4.5rem;
   }
@@ -1628,10 +1629,6 @@ footer li{
 
   .mdl\:h-300{
     height: 60rem;
-  }
-
-  .mdl\:h-100{
-    height: 38rem;
   }
 
   .mdl\:w-11\/12{
